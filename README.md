@@ -1,2 +1,2 @@
 # e_flask_app
-easy flask via app experimental generation technique
+easy basic flask app via experimental generation technique
