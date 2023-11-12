@@ -1,0 +1,10 @@
+[project]
+name = "e_flask_app"
+version = "0.1.0"
+description = "An easy basic flask app via experimental generation technique"
+authors = ["Justin Triplett <justin.triplett@gmail.com>"]
+license = "MIT"
+dependencies = [
+    "flask",
+]
+urls = {repository = "https://github.com/jtrip/e_flask_app"}
