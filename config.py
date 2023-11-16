@@ -1,7 +1,8 @@
-import os
-import uuid
-
+from pathlib import Path
+import random
+import string
 
 class Config(object):
-    ENV = os.getenv("FLASK_ENV", "production")
-    SECRET_KEY = os.getenv("SECREET_KEY", uuid.uuid4().hex)
+    def __init__(self, app):
+        if not app.config.get("SECRET_KEY"):
+            self.SECRET_KEY = ''.join(random.sample(string.ascii_lowercase + string.digits, 32))
