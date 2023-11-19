@@ -19,12 +19,12 @@ def create_app():
     app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
     # configure logging to accoimdate for gunicorn in production, else DEBUG
-    if app.config['ENV'] == 'production':
-        gunicorn_logger = logging.getLogger('gunicorn.error')
+    if app.config["ENV"] == "production":
+        gunicorn_logger = logging.getLogger("gunicorn.error")
         app.logger.handlers = gunicorn_logger.handlers
         app.logger.setLevel(gunicorn_logger.level)
     else:
-        app.logger.setLevel('DEBUG')
+        app.logger.setLevel("DEBUG")
 
     from . import views
 

@@ -7,18 +7,16 @@ bp = Blueprint("views", __name__)
 
 @bp.route("/")
 def index():
-    greeting="Hello, World!"
-    current_app.logger.info(f'{greeting=}')
+    greeting = "Hello, World!"
+    current_app.logger.info(f"{greeting=}")
     return render_template("index.html", greeting=greeting)
 
 
 @bp.route("/logging", methods=["GET"])
-def write_test_data_to_log():
+def log_log_data():
     now = datetime.utcnow()
-    current_app.logger.critical(f"#\nnow: {now}")
-    current_app.logger.critical(
-        f"log level: {getLevelName(current_app.logger.level)} {current_app.logger.level}\n#"
-    )
+    current_log_level_msg = f"log level: {getLevelName(current_app.logger.level)} {current_app.logger.level}"
+    current_app.logger.critical(f"\n# now: {now}\n# {current_log_level_msg}")
     current_app.logger.debug("LOG TEST: DEBUG 10")
     current_app.logger.info("LOG TEST: INFO 20")
     current_app.logger.warning("LOG TEST: WARNING 30")
