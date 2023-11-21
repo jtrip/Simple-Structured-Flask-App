@@ -1,10 +1,7 @@
-import random
-import string
+import secrets
 
 
 class Config(object):
     def __init__(self, app):
         if not app.config.get("SECRET_KEY"):
-            self.SECRET_KEY = "".join(
-                random.sample(string.ascii_lowercase + string.digits, 32)
-            )
+            self.SECRET_KEY = secrets.token_urlsafe(64)
