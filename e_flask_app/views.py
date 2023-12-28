@@ -19,10 +19,10 @@ def log_log_data():
     current_app.logger.critical(
         f"\n# now:\t\t{now_utc.isoformat()}\n# {current_log_level_msg}"
     )
-    current_app.logger.debug("\tLOG TEST: DEBUG\t\t10")
-    current_app.logger.info("\tLOG TEST: INFO\t\t20")
+    current_app.logger.debug("\t\tLOG TEST: DEBUG\t\t10")
+    current_app.logger.info("\t\tLOG TEST: INFO\t\t20")
     current_app.logger.warning("\tLOG TEST: WARNING\t30")
-    current_app.logger.error("\tLOG TEST: ERROR\t\t40")
+    current_app.logger.error("\t\tLOG TEST: ERROR\t\t40")
     current_app.logger.critical("\tLOG TEST: CRITICAL\t50")
     return {
         "now": now_utc.isoformat(),
