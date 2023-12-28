@@ -1,4 +1,13 @@
-__pycache__/
+# APP
 venv/
 instance/*
 !instance/examples
+
+# IDE
+.idea/
+
+# Python
+__pycache__/
+
+# OS
+.DS_Store
