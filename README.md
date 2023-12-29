@@ -1,10 +1,16 @@
-# e_flask_app
-An easy basic flask app via experimental generation technique
+# Simple Structured Flask App
+An easy basic flask app with just enough structure to be a useful starting point.
+
+# Requirements
+* Flask 3.x
+* Ruff
 
 # Dev Setup
-1. `pip install -r requirements.txt`
-2. `cp instance/examples/config.toml instance/config.toml`
-3. `flask run`
+* `python3.12 -m venv venv`
+* `source venv/bin/activate`
+* `pip install -r requirements.txt`
+* `cp instance/examples/config.toml instance/config.toml`
+* `flask run`
 
 # Ruff Usage
 Config in: `ruff.toml`
