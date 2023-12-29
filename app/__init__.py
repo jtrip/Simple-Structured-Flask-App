@@ -15,7 +15,6 @@ def create_app():
     )
     config = Config(app)
     app.config.from_object(config)
-    print(app.config)
     app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
 
     # configure logging to accoimdate for gunicorn in production, else DEBUG
