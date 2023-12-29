@@ -1,10 +1,11 @@
 [project]
-name = "e_flask_app"
+name = "Simple Structured Flask App"
 version = "0.1.0"
-description = "An easy basic flask app via experimental generation technique"
-authors = ["Justin Triplett <justin.triplett@gmail.com>"]
+description = "An easy basic flask app with just enough structure to be a useful starting point."
+authors = ["Me <me@mine.com>"]
 license = "MIT"
 dependencies = [
     "flask",
+    "ruff",
 ]
-urls = {repository = "https://github.com/jtrip/e_flask_app"}
+urls = {repository = "https://github.com/jtrip/Simple-Structured-Flask-App"}
