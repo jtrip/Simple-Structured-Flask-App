@@ -5,3 +5,9 @@ An easy basic flask app via experimental generation technique
 1. `pip install -r requirements.txt`
 2. `cp instance/examples/config.toml instance/config.toml`
 3. `flask run`
+
+# Ruff Usage
+Config in: `ruff.toml`
+
+* `ruff check .`
+* `ruff format .`
