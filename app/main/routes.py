@@ -1,8 +1,7 @@
 from logging import getLevelName
 from datetime import datetime, timezone
-from flask import Blueprint, current_app, render_template
-
-bp = Blueprint("views", __name__)
+from flask import current_app, render_template
+from app.main import bp
 
 
 @bp.route("/")

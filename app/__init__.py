@@ -26,8 +26,8 @@ def create_app():
     else:
         app.logger.setLevel("DEBUG")
 
-    from . import views
+    from app import main
 
-    app.register_blueprint(views.bp)
+    app.register_blueprint(main.bp)
 
     return app
